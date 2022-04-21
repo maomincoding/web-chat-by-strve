@@ -24,13 +24,13 @@ function App() {
                 <div class="chat-msg mine">
                 <p class="msg mineBg msg-m">${item.txt}</p>
                 <p class="user" style="background: ${bg}">
-                ${item.name.substring(item.name.length - 5, item.name.length)}
+                ${useName(item.name)}
                 </p>
                 </div>`
 										: h/*html*/ `
                 <div  class="chat-msg other">
                 <p class="user" style="background:${item.bg}" $key>
-                ${item.name.substring(item.name.length - 5, item.name.length)}
+                ${useName(item.name)}
                 </p>
                 <p class="msg otherBg msg-o" $key>${item.txt}</p>
                 </div>
@@ -54,6 +54,11 @@ function App() {
         </div>
     </div>
     `;
+}
+
+function useName(name) {
+	const username = name.toString();
+	return username.substring(item.name.length - 5, item.name.length);
 }
 
 // 随机获取头像背景

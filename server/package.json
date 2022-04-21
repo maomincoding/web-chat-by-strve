@@ -1,0 +1,9 @@
+{
+  "name": "mychartserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "nodejs-websocket": "^1.7.2"
+  }
+}

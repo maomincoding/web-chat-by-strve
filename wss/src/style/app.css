@@ -1,15 +1,15 @@
 html,
 body {
 	background-color: #e8e8e8;
-	user-select: none;  
+	user-select: none;
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-li{
-    list-style: none;
+li {
+	list-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -47,14 +47,14 @@ li{
 	min-height: 430px;
 	box-shadow: 0 0 24px 0 rgb(19 70 80 / 25%);
 }
-.count{
+.count {
 	height: 5%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #EEEAE8;
+	background: #eeeae8;
 	font-size: 16px;
-  }
+}
 .content {
 	width: 100%;
 	height: 80%;
@@ -102,8 +102,8 @@ li{
 	color: #fff;
 }
 .chat-box {
-	height: 100%;
-	padding:0 20px;
+	height: 88%;
+	padding: 20px;
 	overflow-y: auto;
 }
 .chat-msg {
@@ -121,34 +121,32 @@ li{
 	line-height: 60px;
 	border-radius: 8px;
 	text-align: center;
-	z-index: 1;
-	animation: user-op .2s ease-in-out;
+	animation: user-op 0.2s ease-in-out;
 }
 .msg {
 	margin: 0 10px;
-	max-width: 74%;
+	max-width: 60%;
 	white-space: normal;
 	word-break: break-all;
 	color: #333;
 	border-radius: 8px;
-	padding: 10px 20px;
+	padding: 10px 14px;
 	text-align: justify;
 	font-size: 16px;
-	
 }
-.msg-m{
+.msg-m {
 	border-top-right-radius: 0;
-	animation: up-down .5s ease-in-out;
+	animation: up-down 0.5s ease-in-out;
 }
-.msg-o{
+.msg-o {
 	border-top-left-radius: 0;
-	animation: up-down-o .5s ease-in-out;
+	animation: up-down-o 0.5s ease-in-out;
 }
 .chat-item {
-	padding:20px 0;
+	padding: 20px 0;
 }
 
-@keyframes user-op{
+@keyframes user-op {
 	0% {
 		opacity: 0.5;
 	}

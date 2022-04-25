@@ -58,7 +58,7 @@ function App() {
 
 function useName(name) {
 	const username = name.toString();
-	return username.substring(item.name.length - 5, item.name.length);
+	return username.substring(name.length - 5, name.length);
 }
 
 // 随机获取头像背景

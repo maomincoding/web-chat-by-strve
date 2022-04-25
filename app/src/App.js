@@ -100,8 +100,8 @@ function getMessage(msg) {
 	setData(() => {
 		chatArr.push(obj);
 	}).then(() => {
-		document.querySelector('.chat-box').scrollTop =
-			document.querySelector('.chat-box').scrollHeight;
+		const chatbox = document.querySelector('.chat-box');
+		chatbox.scrollTop = chatbox.scrollHeight;
 	});
 }
 
